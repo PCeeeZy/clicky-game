@@ -1,41 +1,39 @@
-import React, { Component } from "react";
-import Card from "./components/Card";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import friends from "./friends.json";
+import React, { Component } from 'react';
+import Card from './components/Card';
+import Wrapper from './components/Wrapper';
+import Title from './components/Title';
+
+import toons from './toons.json';
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
-  state = {
-    friends
-  };
+    state = {
+        toons
+    };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
-  };
+    clickCard = keyId => {
+        // this is what happens when a card is clicked
+        // we want it to check if keyId has already been clicked
+        // if not increase counter and reSort
+        // if exists, they lose
+    };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
-  render() {
-    return (
-      <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
-          <Card
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
-          />
-        ))}
-      </Wrapper>
-    );
-  }
+    render() {
+        return (
+            <Wrapper>
+                <Title>Looney Clicks</Title>
+                {this.state.toons.map(toon => (
+                    <Card
+                        clickCard={this.clickCard}
+                        key={toon.key}
+                        image={toon.image}
+                        name={toon.name}
+                        sortid={toon.sortId}
+                        clicked={toon.clicked}
+                    />
+                ))}
+            </Wrapper>
+        )
+    }
 }
 
 export default App;
