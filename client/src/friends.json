@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Marvin the Martian",
+    "image": "http://somecontrast.files.wordpress.com/2007/12/marvin-da-martian1.jpg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Bugs Bunny",
+    "image": "https://pre00.deviantart.net/4721/th/pre/i/2017/178/c/9/bugs_bunny_icon_by_famousmari5-da22q4b.png",
+    "clicked": false
+    
+  },
+  {
+    "id": 3,
+    "name": "Tweety",
+    "image": "https://i.pinimg.com/originals/5d/8e/0d/5d8e0da52bdf88a068c751487153be47.gif",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Tasmanian Devil",
+    "image": "https://rlv.zcache.com/taz_through_looney_tunes_circles_classic_round_sticker-rd1adf67c602743029a48bc16cb9368f3_v9waf_8byvr_307.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Daffy Duck",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81nS5FfO0BL._SL1500_.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Porky Pig",
+    "image": "https://i.imgflip.com/1qs2us.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Elmer Fudd",
+    "image": "https://pbs.twimg.com/profile_images/561705166093549568/rdGXu8nm_400x400.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Speedy Gonzalez",
+    "image": "https://i.pinimg.com/236x/cd/cd/1f/cdcd1fec3fb82f289cd0a07f8b5c7f93--sticker.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Foghorn Leghorn",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41Rt-%2B1RDIL.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Yosemite Sam",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61RxDWTKzWL._SX425_.jpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Wile E Coyote",
+    "image": "http://www.wbkidsgo.com/Portals/4/Images/Content/Characters/Wile%20E.%20Coyote/wilecoyote-LT_headShot.png?ver=2016-06-09-181034-280",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Road Runner",
+    "image": "https://www.wbkidsgo.com/Portals/4/Images/Content/Characters/Road%20Runner/roadrunner-LT_headShot.png",
+    "clicked": false
+  }
+]
