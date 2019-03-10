@@ -7,14 +7,62 @@ import toons from './toons.json';
 
 class App extends Component {
     state = {
-        toons
-    };
+        toons: toons,
+        score: 0,
+        highScore: 0
+    }
 
-    clickCard = keyId => {
-        // this is what happens when a card is clicked
-        // we want it to check if keyId has already been clicked
-        // if not increase counter and reSort
-        // if exists, they lose
+    generateRandomToons = toons => {
+        const length = toons.length;
+        let temp = [];
+        for(let i =0 ;i<length;i++){
+            let justJunk = toons.splice(Math.floor(Math.random() * length,1));
+            temp.push(justJunk[0]);
+        }
+        toons = temp;
+        return toons;
+
+    }
+
+    clickCard = (clicked, id) => {
+        let clickToons = this.state.toons;
+        // check if clicked is t/f
+        if (clicked) {
+            // if true we check high score and lose and reset game
+            this.setState(
+                { 
+                    toons: toons,
+                    score: 0
+                })
+            console.log(`this has been clicked bud`);
+        }
+        // else
+        else {
+
+            clickToons[id].clicked = true;
+            let name = clickToons[id].name;
+            let newScore = this.state.score+1;
+            let newHigh = this.state.highScore+1;
+
+            //  set clicked to true
+            console.log(`${name} has now been clicked. ${clickToons[id].clicked}`);
+            this.setState(
+                { 
+                    toons: clickToons,
+                    // add 1 to score
+                    score: newScore,
+                    highScore: newHigh
+
+                })
+            console.log(`Score: ${newScore}`);
+            console.log(`HighScore: ${newHigh}`)
+            // randomize order of toons
+        }
+            
+
+
+    //    let toons = this.generateRandomToons(toon);
+    //    this.setState({toons: toons})
     };
 
     render() {
@@ -24,11 +72,11 @@ class App extends Component {
                 {this.state.toons.map(toon => (
                     <Card
                         clickCard={this.clickCard}
-                        key={toon.key}
                         image={toon.image}
                         name={toon.name}
                         sortid={toon.sortId}
                         clicked={toon.clicked}
+                        // toons = {this.state.toons}
                     />
                 ))}
             </Wrapper>

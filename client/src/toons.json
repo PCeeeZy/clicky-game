@@ -1,5 +1,13 @@
 [
   {
+    "key": 0,
+    "name": "Road Runner",
+    "image": "https://dumielauxepices.net/sites/default/files/roadrunner-clipart-warner-brothers-742945-4909619.png",
+    "clicked": false,
+    "sortId": 0
+  },
+
+  {
     "key": 1,
     "name": "Marvin the Martian",
     "image": "https://www.wbkidsgo.com/Portals/4/Images/Content/Characters/Marvin%20the%20Martian/marvin-LT_headShot.png",
@@ -75,12 +83,5 @@
     "image": "http://www.wbkidsgo.com/Portals/4/Images/Content/Characters/Wile%20E.%20Coyote/wilecoyote-LT_headShot.png?ver=2016-06-09-181034-280",
     "clicked": false,
     "sortId": 11
-  },
-  {
-    "key": 12,
-    "name": "Road Runner",
-    "image": "https://dumielauxepices.net/sites/default/files/roadrunner-clipart-warner-brothers-742945-4909619.png",
-    "clicked": false,
-    "sortId": 12
   }
 ]
